@@ -1,38 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background: #AA076B;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #61045F, #AA076B);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #61045F, #AA076B);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.react-chatbot-kit-chat-container {
+    width: 400px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.react-chatbot-kit-chat-bot-message {
+    margin-left: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.react-chatbot-kit-chat-bot-message {
+    background-color: #61045F;
 }
 
-.App-link {
-  color: #61dafb;
+.react-chatbot-kit-chat-bot-message-arrow {
+    border-right: 8px solid #61045F;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.react-chatbot-kit-chat-btn-send {
+    background-color: #61045F;
+}
+
+.ADE {
+    background-color: #AA076B;
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    color: white;
+    border-radius: 100%;
+}
+
+.start-btn {
+    background-color: #61045F;
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    margin-left: 3rem;
+}
+
+.slow-btn {
+    margin-left: 1rem;
+}
+
+.img-component {
+    margin-left: 3rem;
+    position: relative;
+}
+
+.img-container {
+    width: 185px;
+    height: 185px;
+    border: 2px solid #61045F;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-component a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    background-color: #61045F;
+    color: white;
+    text-decoration: none;
+    padding: .5rem 1rem;
+}
+
+.img-component a:hover {
+    background-color: #61045f5e;
 }
